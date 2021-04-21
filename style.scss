@@ -1,0 +1,211 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body,html{
+	line-height: 1;overflow-x: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+// fonts
+$medium:'Palanquin Dark medium';
+$bold:'Palanquin Dark bold';
+$regular:'Palanquin Dark regular';
+$semi-bold:'Palanquin Dark semibold';
+
+// color
+$orange:rgb(255, 192, 3);
+
+
+.Vasaros{
+	h1{font-size: 25px; margin-top: 20px; font-family: $bold; text-align: center; background-color: $orange;padding: 20px; color: #fff;}
+	.cards{display: flex; flex-wrap: wrap; justify-content: center; align-items: center;margin-top:10px ;
+		.items{margin: 30px 5px; width: 250px;height: 150px; background-color: $orange; display: flex; justify-content: center; align-items: center;
+			h3{color: #fff; font-size: 20px; font-family: $semi-bold; line-height: 28px; text-align: center;letter-spacing: 1px;}
+		}
+
+	}
+
+}
+
+.komanda{
+	h2{font-size: 22px; margin-top: 20px; font-family: $bold; text-align: center; background-color:$orange;padding: 20px; color: #fff;}
+	.inner{ align-items: center; margin: 20px 22px 0 22px;
+		.ko-items{  margin: 20px 0;color: #000;
+			h4{text-align: center;font-family: $regular; font-size: 20px; line-height: 35px;}
+		}
+	}
+	.apie{
+		
+		.apie-inner{margin: 30px 10px;
+			a{color: #000;}
+			p{font-size: 16px; font-family: $regular; line-height: 25px;
+				span{font-size: 20px; font-size: $semi-bold; text-decoration: underline;}
+			}
+		}
+	}
+}
+
+.stovyklaviete{margin-bottom: 150px;
+	h2{font-size: 22px; margin-top: 20px; font-family: $bold; text-align: center; background-color: $orange;padding: 20px; color: #fff; line-height: 30px;}
+	.stovy-inner{margin: 20px 10px;
+		img{margin: 10px 0;}
+	}
+}
+
+
+
+// MEDIA QUERIES=========================================================================================================================================================================================================
+@media (min-width: 375px) { }
+
+@media (min-width: 568px) and(max-width: 568px) {
+	.Vasaros .cards .items {margin: 30px 5px;width: 103px;height: 70px;
+		h3 {font-size: 14px;line-height: 16px;}
+	}
+	.komanda .inner {
+		display: flex; justify-content: center; align-items: center;
+		.ko-items{margin: 0 6px;
+			h4{line-height: 15px;}
+		}
+	}
+ } 
+ @media (min-width: 667px) and(max-width: 667px) {
+	.Vasaros .cards .items {margin: 30px 5px;width: 118px;height: 70px;
+		h3 {font-size: 16px;line-height: 24px;}
+	}
+	.komanda .inner {
+		display: flex; justify-content: center; align-items: center;flex-wrap: wrap;
+		.ko-items{margin: 10px 6px;width: 20%;
+			h4{line-height: 15px;     font-size: 16px;}
+		}
+	}
+	.stovyklaviete{ 
+		.stovy-inner{padding: 5px 0; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+			img{width: 21%;margin: 0 9px;}
+		}
+	}
+ }
+ @media (min-width: 736px) and(max-width: 736px) {
+	.Vasaros .cards .items {margin: 30px 5px; width: 134px; height: 86px;
+		h3 {font-size: 16px;line-height: 24px;}
+	}
+	.komanda .inner {
+		display: flex; justify-content: center; align-items: center;flex-wrap: wrap;
+		.ko-items{margin: 10px 4px;width: 20%;
+			h4{line-height: 15px;font-size: 16px;}
+		}
+	}
+	.stovyklaviete{ 
+		.stovy-inner{padding: 5px 0; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+			img{width: 22%;margin: 0 9px;}
+		}
+	}
+ }
+
+@media (min-width: 768px) {
+	.Vasaros .cards .items {margin: 30px 8px;width: 136px;height: 94px;}
+	.komanda .inner {margin: 20px 10px 0 10px;display: flex;justify-content: center;align-items: center;flex-wrap: wrap;
+		.ko-items {    width: 21%;margin: 20px 7px;
+			h4{font-size: 22px;}
+		}
+	}
+	.stovyklaviete{ 
+		.stovy-inner{padding: 5px 0; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+			img{width: 22%;margin: 0 9px;}
+		}
+	}
+}
+
+  
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+	.Vasaros .cards{padding: 50px 0;
+		.items {margin: 30px 12px;width: 178px;height: 120px;
+		h3 {font-size: 26px;}}
+	}
+	.komanda{
+		.inner{display: flex; align-items: center; justify-content: center; padding: 50px 0;flex-wrap: wrap;
+			.ko-items{margin: 10px 10px;width: 12%;
+				img{width: 100%;}
+				h4{font-size: 22px;}
+			}
+		}
+	}
+	.stovyklaviete{ 
+		.stovy-inner{padding: 5px 0; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;margin: 20px -5px;
+			img{width: 23%;margin: 0 9px;}
+		}
+	
+			
+	
+	}
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+	
+	.Vasaros{
+		h1{font-size: 80px;}
+		.cards{
+			.items{margin: 30px 12px;width: 230px;height: 120px;
+				h3{font-size: 30px; line-height: 30px;}
+			}
+		}
+	}
+	.komanda{
+		h2{font-size: 50px;}
+		h4{font-size: 16px;}
+	}
+	.stovyklaviete{ 
+		h2{font-size: 50px;}
+		.stovy-inner{margin: 20px -20px;}
+	}
+
+}
+
+@media (min-width: 1440px) { 
+	.Vasaros .cards .items {margin: 30px 12px;width: 260px;height: 120px;}
+
+}

@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Palanquin Dark medium';
+    src: url('PalanquinDark-Medium.eot');
+    src: local('Palanquin Dark Medium'), local('PalanquinDark-Medium'),
+        url('PalanquinDark-Medium.eot?#iefix') format('embedded-opentype'),
+        url('PalanquinDark-Medium.woff2') format('woff2'),
+        url('PalanquinDark-Medium.woff') format('woff'),
+        url('PalanquinDark-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palanquin Dark bold';
+    src: url('PalanquinDark-Bold.eot');
+    src: local('Palanquin Dark Bold'), local('PalanquinDark-Bold'),
+        url('PalanquinDark-Bold.eot?#iefix') format('embedded-opentype'),
+        url('PalanquinDark-Bold.woff2') format('woff2'),
+        url('PalanquinDark-Bold.woff') format('woff'),
+        url('PalanquinDark-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palanquin Dark regular';
+    src: url('PalanquinDark-Regular.eot');
+    src: local('Palanquin Dark Regular'), local('PalanquinDark-Regular'),
+        url('PalanquinDark-Regular.eot?#iefix') format('embedded-opentype'),
+        url('PalanquinDark-Regular.woff2') format('woff2'),
+        url('PalanquinDark-Regular.woff') format('woff'),
+        url('PalanquinDark-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palanquin Dark semibold';
+    src: url('PalanquinDark-SemiBold.eot');
+    src: local('Palanquin Dark SemiBold'), local('PalanquinDark-SemiBold'),
+        url('PalanquinDark-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('PalanquinDark-SemiBold.woff2') format('woff2'),
+        url('PalanquinDark-SemiBold.woff') format('woff'),
+        url('PalanquinDark-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
